@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Vedant_v1</title>
+</head>
+<body>
+    <div class="navbar navbar-expand-md navbar-light bg-warning">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Products</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#">About Us</a>
+            </li>
+           
+        </ul>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-6">
+                <div class="column1">
+                    <h1>Live Screen Sharing</h1>
+                    <img id="screenFrame" alt="Live Stream" width="640" height="480">
+                
+                    <script src="https://cdn.socket.io/4.3.2/socket.io.min.js" 
+                            integrity="sha384-KtFRiv/q6PbZOXbVGCmZ9l9B6tRg8NxusYgv3wZ5V5tvQ0wnYzZ6l0HJqZw5f5dc" 
+                            crossorigin="anonymous">
+                    </script>
+                
+                    <script>
+                        const socket = io.connect('http:102.168.137.1:5000');
+                
+                        socket.on('frame', (data) => {
+                            document.getElementById('screenFrame').src = `data:image/jpeg;base64,${data.image}`;
+                        });
+                    </script>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6 order-md-2" id="text_data">
+                <div class="column">
+                    <form action="" method="get">
+                        <div class="card">
+                            <div class="card-header">
+                              Featured
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">Special title treatment</h5>
+                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                          </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    
+    
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
