@@ -3,9 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylehome.css">
+    <title>Home</title>
 </head>
 <body>
+    <div class="navbar navbar-expand-md navbar-dark color">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="">Products</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#">About Us</a>
+            </li>
+           
+        </ul>
+    </div>
+    <div class="slider container-fluid" id="revel" autoplay>
+        <div class="d-flex align-items-center justify-content-center Work_text_class">
+            <h1 class="button_area_text centered-heading">Our Work</h1>
+        </div>
+        <input type="radio" name="testimonial" id="t-1">
+        <input type="radio" name="testimonial" id="t-2">
+        <input type="radio" name="testimonial" id="t-3" checked>
+        <input type="radio" name="testimonial" id="t-4">
+        <input type="radio" name="testimonial" id="t-5">
+        <div class="testimonials">
+            <label class="item" for="t-1">
+                <video class="d-block w-500" width="640" height="360"  autoplay>
+                    <source src="/dusk-coastal-town-39-1 (Original).mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </label>
+            <label class="item" for="t-2">
+                <video class="d-block w-500" width="640" height="360" autoplay>
+                    <source src="/city_night_lights_and_empty_streets_3_free_stock_video (Original).mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </label>
+            <label class="item" for="t-3">
+                <video class="d-block w-500" width="640" height="360" autoplay>
+                    <source src="/slow-rise-over-kona-shore (Original).mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </label>
+            <label class="item" for="t-4">
+                <video class="d-block w-500" width="640" height="360" autoplay>
+                    <source src="/city_night_lights_and_empty_streets_3_free_stock_video (Original).mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </label>
+            <label class="item" for="t-5">
+                <video class="d-block w-500" width="640" height="360" autoplay>
+                    <source src="/slow-rise-over-kona-shore (Original).mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </label>
+        </div>
+        <div class="dots">
+            <label for="t-1"></label>
+            <label for="t-2"></label>
+            <label for="t-3"></label>
+            <label for="t-4"></label>
+            <label for="t-5"></label>
+        </div>
+    </div>
     
+    
+    <div class="container-fluid Products" id="button_area">
+        <!-- Center-align the content -->
+        <div class="d-flex align-items-center justify-content-center text_area_class">
+            <h1 class="button_area_text centered-heading">Our Products</h1>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-6 order-md-2">
+                <a href="index.html">
+                    <img class="bot_img hover-zoom" src="/robot-line-icon-or-bot-concept-vector-36690899-removebg-preview.png">
+                   
+                  </a>
+                  
+                
+            </div>
+            <div class="col-12 col-md-6 col-lg-6 order-md-2">
+               <a href="index1.html">
+                <img class="drone_img hover-zoom" src="/drone-black-round-icon-vector-4654395-removebg-preview.png" alt="">
+                  </a> <!-- Apply hover effect to the bot image -->
+                
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
-</html>m
+</html>
